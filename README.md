@@ -61,6 +61,10 @@ Constraints
 
 Output Format
 On each line, output the entire array at every iteration.
+
+
+
+
 Sample Input
 6
 1 4 3 5 6 2
@@ -86,6 +90,9 @@ Output Format
 Print the integer sum of the elements in the array.
 Constraints 
  
+
+
+
 
 Sample Input
 5
