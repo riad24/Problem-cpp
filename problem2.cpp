@@ -1,4 +1,3 @@
-
 #include <iostream>
 using namespace std;
 void printArray(int arr[], int n)
@@ -21,8 +20,6 @@ void insertionSort(int arr[], int n)
         {
             arr[j + 1] = arr[j];
             j = j - 1;
-
-
         }
         arr[j + 1] = key;
         printArray(arr, n);
@@ -41,7 +38,7 @@ int main()
     {
         cin>>arr[i];
     }
-
+cout<<"Enter the array element."<<endl;
     insertionSort(arr, n);
 
     return 0;
