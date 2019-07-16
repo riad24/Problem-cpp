@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+
+void strSort(string arr[], int n) {
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++) {
+            if(arr[i][0] < arr[j][0]){
+                string temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+}
+void print(string arr[], int n) {
+    for(int i = 0; i < n; i++){
+        cout<<arr[i]<<endl;
+    }
+}
+
+int main() {
+    int n;
+    cout<<"Enter the value of array size."<<'\n';
+    cin>>n;
+    string arr[n+1];
+    for(int i = 0; i < n+1; i++) {
+        getline(cin,arr[i]);
+    }
+
+    strSort(arr, n+1);
+    cout<<"Shorted Value"<<'\n';
+    print(arr, n+1);
+return 0;
+}
+
